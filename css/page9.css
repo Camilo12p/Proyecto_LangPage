@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+.conteiner {
+    width: 98vi;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.left {
+        position: relative;
+        width: 50vi;
+}
+.left img:nth-of-type(1){
+    padding-top: 5rem;
+    width: 100%;
+}
+.rigth {
+    /* margin: 5rem; */
+    width: 40vi;
+    height: 20vi;
+}
+.upper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    /* padding-bottom: 9rem; */
+}
+h1{
+    color: #2C1001;
+}
+.vuitton {
+    font-size: 1rem;
+    background-color: #FFDE81;
+    color: #2C1001;
+    padding-inline: 30px;
+    padding-block: 17px;
+    border-radius: 40px;
+}
+.number {
+    font-weight: bold;
+    font-size: 2rem;
+}
+hr{
+    font-size: 3rem;
+    width: 50%;
+}
+.downer {
+    margin-top: 6rem;
+    display:grid;
+    background-color: #49342F;
+    color: #fff;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap:3rem;
+    border-radius: 30px;
+    padding: 2rem;
+    padding-inline: 3rem;
+    width: 100%;
+    font-size: 1rem;
+
+    img{
+        width: 35%;
+    }
+}
+
+@media (max-width:800px) {
+    .conteiner{
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .upper , .downer{
+        margin-bottom: 1rem;
+    }
+    .downer{
+        justify-items: center;
+    }
+    .left{
+        width: 70%;
+        margin: 5rem;
+        margin-bottom: 30vi;
+    }
+    .rigth{
+        position: relative;
+        width: 85vw;
+    }
+}
+@media (max-width:643px) {
+    .downer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .left{
+        margin-bottom: 35rem;
+    }
+    }
+    .upper div{
+        display:flex;
+        flex-direction: column;
+    }
+    .vuitton{
+        margin: .6rem;
+    }

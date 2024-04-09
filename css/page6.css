@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+body{
+    background-color: #9C2004;
+    overflow-x: hidden;
+}
+
+.caja-main {
+    width: 100vi;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.caja-imagenes {
+    width: 45vi;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+}
+
+.elipse{
+    position: absolute;
+    z-index: -3;
+    left: 0rem;
+    background-color: transparent;
+    width: 95%;
+}
+.persona {
+    position: absolute;
+    width: 96%;
+    left: 0;
+    top: 2rem;
+}
+.cuadro1{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.cuadro2{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 3rem;
+}
+.caja-texto {
+    width: 45vw;
+}
+.txt-superior {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    font-size: 2.3rem;
+}
+
+h1{
+    font-size: 7rem;
+}
+p{
+    font-size: 1.7rem;
+    padding-bottom: 3rem;
+}
+
+.boton {
+    font-size: 1.5rem;
+    background-color: #E5B94B;
+    color: black;
+    padding-inline: 50px;
+    padding-block: 20px;
+    border-radius: 30px;
+}
+
+@media (max-width:800px) {
+    .caja-main{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .superior {
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+    .caja-imagenes{
+        width: 85vw;
+        margin-bottom: 1rem;
+    }
+    .cuadro2{
+        bottom: 9rem;
+    }
+    .caja-texto{
+        width: 85vw;
+    }
+}
