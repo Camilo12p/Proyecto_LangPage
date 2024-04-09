@@ -70,6 +70,8 @@ body {
   .container-general {
     background-image: url(../img/page55/Image\ bg.png);
     flex-direction: row;
+    /* margin: 0 auto;
+    max-width: 1300px; */
     align-items: center;
   }
   .text-container {
@@ -80,7 +82,7 @@ body {
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin: 0;
   }
 
@@ -100,3 +102,4 @@ body {
     font-size: 1rem;
   }
 }
+

@@ -40,3 +40,63 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
+.title-info {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.container-table::before {
+  content: "";
+  background-image: url(../img/page54/Font\ circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -110px;
+  margin-bottom: -100px;
+}
+
+@media (min-width: 900px) {
+  .container-general {
+    background-image: url(../img/page54/image_bg.png);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding: 200px 0 !important;
+    /* margin: 20px auto;
+    max-width: 1400px; */
+  }
+
+  .text-container {
+    width: 60%;
+    max-width: 700px;
+    text-align: start;
+  }
+
+  .title {
+    font-size: 3.8rem;
+  }
+
+  .container-table {
+    width: 30%;
+    max-width: 320px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .container-table::before {
+    top: -100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-general {
+    transform: scale(1.1);
+  }
+}
